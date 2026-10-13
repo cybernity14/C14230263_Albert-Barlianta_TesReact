@@ -1,0 +1,46 @@
+
+.card {
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: white;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgb(15 23 42 / 10%);
+}
+
+.nama {
+  margin-top: 0;
+  color: #1f2937;
+}
+
+.harga {
+  color: #0f766e;
+  font-weight: bold;
+}
+
+.info {
+  color: #64748b;
+}
+
+.habis {
+  color: #dc2626;
+  font-weight: bold;
+}
+
+.tersedia {
+  color: #15803d;
+}
+
+.tombol {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.tombol:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}

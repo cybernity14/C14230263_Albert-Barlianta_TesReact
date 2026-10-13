@@ -1,0 +1,258 @@
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+}
+
+.app-header {
+  margin-bottom: 24px;
+}
+
+.app-header h1 {
+  margin-bottom: 8px;
+  color: #0f766e;
+}
+
+.app-header p,
+.jumlah-menu {
+  color: #64748b;
+}
+
+.session-timer,
+.form-menu {
+  margin-bottom: 24px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: white;
+}
+
+.session-timer {
+  background: #f0fdfa;
+  border-color: #99f6e4;
+}
+
+.timer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.timer-header h2,
+.form-menu h2 {
+  margin-top: 0;
+}
+
+.timer-content {
+  margin-top: 12px;
+}
+
+.timer-waktu,
+.timer-habis {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+  font-variant-numeric: tabular-nums;
+}
+
+.timer-waktu {
+  color: #0f766e;
+}
+
+.timer-habis,
+.form-error {
+  color: #dc2626;
+}
+
+.form-menu form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-field label {
+  font-weight: bold;
+}
+
+.form-field input,
+.form-field select,
+.pencarian input {
+  width: 100%;
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: white;
+}
+
+.form-menu form > button,
+.form-error {
+  grid-column: 1 / -1;
+}
+
+.form-error {
+  margin: 0;
+}
+
+button {
+  padding: 9px 14px;
+  border: none;
+  border-radius: 6px;
+  background: #0f766e;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #115e59;
+}
+
+button:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+}
+
+button:focus-visible,
+input:focus-visible,
+select:focus-visible {
+  outline: 2px solid #14b8a6;
+  outline-offset: 2px;
+}
+
+.filter-bar {
+  margin-bottom: 20px;
+}
+
+.pencarian {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.pencarian input {
+  flex: 1;
+}
+
+.filter-kategori {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-kategori .aktif {
+  background: #1e293b;
+}
+
+.menu-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.menu-card {
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: white;
+}
+
+.menu-card h3 {
+  margin-top: 0;
+}
+
+.menu-harga {
+  font-weight: bold;
+  color: #0f766e;
+}
+
+.pesan-kosong {
+  padding: 20px;
+  text-align: center;
+  color: #64748b;
+}
+
+.keranjang {
+  margin-top: 32px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  background: white;
+}
+
+.keranjang-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.kontrol-qty {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (max-width: 600px) {
+  .app {
+    padding: 16px;
+  }
+
+  .form-menu form {
+    grid-template-columns: 1fr;
+  }
+
+  .pencarian {
+    flex-wrap: wrap;
+  }
+
+  .pencarian input {
+    flex-basis: 100%;
+  }
+
+  .keranjang-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .kontrol-qty {
+    flex-wrap: wrap;
+  }
+}
+
+
+.panel {
+  margin-bottom: 24px;
+}
+
+.panel-title {
+  margin: 0 0 16px;
+  color: #1f2937;
+  font-size: 20px;
+}
+
+.panel-timer,
+.panel-form,
+.panel-filter,
+.panel-daftar,
+.panel-keranjang {
+  min-width: 0;
+}
+
+.panel-form > .form-menu,
+.panel-timer > .session-timer,
+.panel-keranjang > .keranjang {
+  margin-top: 0;
+  margin-bottom: 0;
+}
